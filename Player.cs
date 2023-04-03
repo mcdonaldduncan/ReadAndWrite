@@ -14,6 +14,7 @@ namespace ReadAndWrite
         int DEF;
         int INT;
 
+        public Inventory inventory { get; set; }
 
         public Player(string name, int age, int _atk, int _def, int _int) 
         {
@@ -22,6 +23,16 @@ namespace ReadAndWrite
             ATK = _atk;
             DEF = _def;
             INT = _int;
+
+            inventory = new Inventory();
+        }
+
+        public void DisplayInventory()
+        {
+            foreach (var item in inventory.Items)
+            {
+                Console.WriteLine(item.Name);
+            }
         }
     }
 }

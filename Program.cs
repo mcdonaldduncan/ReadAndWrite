@@ -6,4 +6,7 @@ Console.WriteLine("Hello, World!");
 
 Game game = new Game();
 
-game.i
+game.Initialize();
+game.Display();
+
+Console.ReadLine();
