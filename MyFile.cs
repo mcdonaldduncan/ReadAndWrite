@@ -28,8 +28,11 @@ namespace ReadAndWrite
         /// <param name="_fileName">This is the name of the file, we collect this data in findallfiles</param>
         public MyFile(string _fileName)
         {
+            // combine directory path and filename for full file path
             FilePath = Path.Combine(directoryPath, _fileName);
+            // Take a substring starting at the last index of "\" + 1. Ex: "...\...\...\saveData.csv" becomes "saveData.csv"
             FileName = _fileName.Substring(_fileName.LastIndexOf(@"\") + 1);
+            // Delimiter is always set tp comma but you could conditionally set to different values if you had multiple file types
             Delimiter = ",";
         }
     }
