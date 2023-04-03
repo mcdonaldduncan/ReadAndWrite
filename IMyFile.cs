@@ -13,6 +13,7 @@ namespace ReadAndWrite
     internal interface IMyFile
     {
         public string FilePath { get; set; }
+        public string FileName { get; set; }
         public string Delimiter { get; set; }
     }
 }
