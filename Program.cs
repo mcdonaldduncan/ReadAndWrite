@@ -15,6 +15,8 @@ Console.ReadLine();
 /*
  * Please Read!
  * 
+ * Add a new folder to bin\debug\net6.0 named saveData if not already included, add data to folder
+ * 
  * This is an example of how to read files using a StreamReader in context of a game/inventory
  * Writing files is not included currently but will be added down the line, very similar to read process using StreamWriter
  * 

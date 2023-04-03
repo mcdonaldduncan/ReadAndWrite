@@ -13,7 +13,7 @@ namespace ReadAndWrite
     internal class Constant
     {
         // This is the name of the folder we will be reading from
-        private const string folderName = "temp";
+        private const string folderName = "saveData";
 
         // This does not get used in this example, but this is the name of the folder we want to write to
         private const string writeFolder = "out";
