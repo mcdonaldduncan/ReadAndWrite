@@ -15,7 +15,7 @@ namespace ReadAndWrite
         // This is the path specific to this file, FilePath is set in the constructor
         public string FilePath { get; set; }
 
-        // This is the delimiter specific to this file. For this project, always comma
+        // This is the delimiter specific to this file. For this project, always comma ","
         public string Delimiter { get; set; }
 
         /// <summary>

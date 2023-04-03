@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace ReadAndWrite
 {
+    /// <summary>
+    /// The Player class is just a hypothetical example of what a player/character could look like in your game
+    /// In this case, we only really care about the Inventory
+    /// </summary>
     internal class Player
     {
         string Name;
@@ -27,10 +31,15 @@ namespace ReadAndWrite
             inventory = new Inventory();
         }
 
+        /// <summary>
+        /// Displays the current inventory of this player instance to the console
+        /// </summary>
         public void DisplayInventory()
         {
+            // Loop over all items in the inventory items
             foreach (var item in inventory.Items)
             {
+                // Print the item name
                 Console.WriteLine(item.Name);
             }
         }
