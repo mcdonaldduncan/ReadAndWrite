@@ -26,7 +26,7 @@ namespace ReadAndWrite
         /// Delimiter is always comma for this application but could be different for different data
         /// </summary>
         /// <param name="_fileName">This is the name of the file, we collect this data in findallfiles</param>
-        public MyFile(string _fileName) 
+        public MyFile(string _fileName)
         {
             FilePath = Path.Combine(directoryPath, _fileName);
             FileName = _fileName.Substring(_fileName.LastIndexOf(@"\") + 1);
