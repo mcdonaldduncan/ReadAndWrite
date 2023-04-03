@@ -15,17 +15,18 @@ Console.ReadLine();
 /*
  * Please Read!
  * 
- * This is an example of how to read files using a streamreader in context of a game/inventory
- * Writing is not included currently but will be added down the line
+ * This is an example of how to read files using a StreamReader in context of a game/inventory
+ * Writing files is not included currently but will be added down the line, very similar to read process using StreamWriter
  * 
  * There are a few issues with this example project and it would need some improvements for actual use.
+ * 
  * A couple major flaws that could/should be improved are:
  * 
  * Error reporting, right now we catch exceptions and make sure we don't crash for the most part but 
  * we do not communicate those errors to the user or developer, a very improtant step would be to add error reporting
  * 
  * Lots of hard coded values, when we build items, we hard coded the array indexes, 
- * this results in fragile and difficult to mantain code
+ * this results in fragile and difficult to mantain code, other examples exist in the project
  * 
  * If you are serious about developing software professionally these could be great challenges to try out
  * that actually translate into code you will write in the real world
